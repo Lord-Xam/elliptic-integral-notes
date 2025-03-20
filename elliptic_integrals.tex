@@ -4,7 +4,6 @@
 \usepackage{mathtools, amssymb}
 \usepackage{tikz}
 
-
 \title{The pendulum problem and elliptic integrals}
 \author{Max Levine}
 \date{\today}
@@ -118,6 +117,17 @@ $\int\frac{d\theta}{\sqrt{1-n^2\sin^2\theta}}$?
 \vspace{5mm} We are going to have to make a few substitutions.
 
 First, using the identity $\cos(2\varphi)=1-2\sin^2\varphi$
+
+\section{Functional Equations}
+In order to understand the solution above, we must talk about functional equations. Functional equations are similar to differential equations in that their solutions are functions themselves. Consider the functional equation
+
+$$f(xy)=f(x)+f(y)$$
+
+You might know a function that solves this equation, but for the moment, pretend we don't know what that function is, what can we say about this function?
+
+\vspace{5mm} If we take $x=0,y=0$ then we see that $f(0)=f(0)+f(0)\Rightarrow f(0)=0$
+
+
 
 \begin{thebibliography}{9}
 
