@@ -8,21 +8,20 @@
 \author{Max Levine}
 \date{\today}
 
+\setlength{\parindent}{0pt}
+
 \begin{document}
 \maketitle
 \tableofcontents
 
 \section{Introduction}
-This paper covers the relations between pendulums in physics, elliptic integrals, functional equations, the lemninscate, and more.
+This paper is a collection of notes based on an interesting video I watched with my friend, and a series of seminars given by my cal 3 teacher in college. I will reveal the connections between pendulums in physics, elliptic integrals, functional equations, the arithmetic-geometric mean, and more.
 
-\vspace{5mm} I will present these topics in the way that I discovered them, starting with my introduction from a youtube video that expected a way higher level of math than I initially expected, then connecting that to the topic of a weekly math seminar held at my school about elliptic functions. Coincidentally these math seminars I attended slowly started to connect the dots, and the choices made in that youtube video slowly started to make sense.
+\vspace{5mm} I will present these topics in the way that I discovered them, starting with the example of finding the period of a pendulum, then moving on to functional equations and elliptic integrals. 
 
 \section{The pendulum problem}
-During my first year of CEGEP, my friend Kai and I were very interested in more advanced math and physics problems (by advanced, I mean anything more advanced that what we had learned so far: differentiable calculus, integral calculus, and linear algebra). 
-
-\vspace{5mm}Integrals are infamous for being one of the first real challenging problems for college students. So in search of a worthy integral, we found a video titled: \underline{\href{https://www.youtube.com/watch?v=h19xcTPzlEc}{The complete elliptic integral of the first kind}}.
-
 \subsection{The problem}
+This first part is based on the \underline{\href{https://www.youtube.com/watch?v=h19xcTPzlEc}{video}} my friend and I found titled: The complete elliptic integral of the first kind.
 The problem: find the period of a pendulum.
 
 \vspace{10mm}\begin{minipage}{6cm}
@@ -116,7 +115,9 @@ $\int\frac{d\theta}{\sqrt{1-n^2\sin^2\theta}}$?
 
 \vspace{5mm} We are going to have to make a few substitutions.
 
-First, using the identity $\cos(2\varphi)=1-2\sin^2\varphi$
+First, the identity $\cos(2\varphi)=1-2\sin^2\varphi \longrightarrow \cos\varphi=1-2\sin^2\frac{\varphi}{2}$
+
+$$T=2\sqrt{2}\sqrt{\frac{l}{g}}\int_0^{\varphi_0}\frac{d\varphi}{\sqrt{(1-2\sin^2\frac{\varphi}{2}-cos\varphi_0)}}$$
 
 \section{Functional Equations}
 In order to understand the solution above, we must talk about functional equations. Functional equations are similar to differential equations in that their solutions are functions themselves. Consider the functional equation
